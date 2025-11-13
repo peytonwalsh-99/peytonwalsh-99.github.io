@@ -19,10 +19,13 @@ and the messages that you received.
 
 | Encoded Message | Decoded Message | Key |
 | --------------- | --------------- | --- |
-|                 |                 |     |
-|                 |                 |     |
-|                 |                 |     |
-|                 |                 |     |
+|Byffi nbyly.     |Hello there.     | 20  |
+|Cxe qbun ni qlcn |Idk what to write|     |
+|ndj'gt sdxcv xi! |you're doing it! | 15  |
+|Good luck        |Good luck        |     |
+|decoding this one|decoding this one| 0   |
+|Nvvk sbjr        |Good luck        |     |
+|kljvkpun aopz vul|decoding this one| 7   |
 
 
 ## Part 3: Connection to TCP/IP Model
@@ -49,33 +52,39 @@ Assume that each packet can hold two bytes. Fill in the packet information below
     =========
     Packet 1:
 
-    Source: [Your Name]
-    Destination: [Partner's Name]  
+    Source: [Peyton]
+    Destination: [Chris]  
     Sequence: 1/3
-    Data: [binary for char 1] [binary for char 2]
+    Data: [01101101] [01110010]
     =========
     Packet 2:
 
-    Source: [Your Name]
-    Destination: [Partner's Name]
+    Source: [Peyton]
+    Destination: [Chris]
     Sequence: 2/3 
-    Data: [binary for char 3] [binary for char 4]
+    Data: [01101110] [01110101]
     =========
     Packet 3:
 
-    Source: [Your Name]
-    Destination: [Partner's Name]
+    Source: [Peyton]
+    Destination: [Chris]
     Sequence: 3/3
-    Data: [binary for char 5] [binary for char 6]
+    Data: [01101101] [01000010]
     =========
 
 ## Part 4: Reflection Questions
 
 - What is the difference between symmetric and asymmetric encryption? What purpose did each serve in this simulation?
+	-Asemetric required both public and private keys. In this simulation, we used assemetric encryption to establish a shared sectret, which we then used with semmetric encryption to pass the remaining messages. (Changing the key with a formula to avoid an adversary being able to decrypt multiple messages.)
 - Why is it important that this protocol uses a new key for each message?
+	-If all messages use the same key, in the event that an adversary finds the key, they will be able to decrypt all messages. If it changes, they will only be able to decrypt one.
 - Why is it important that you never share your secret key?
+	-Assemetric encryption relies on the fact that the private keys are secret. If you share your private key, an adversary will be able to figure out the secret, leading to all of the messages being decrypted (if they have the formula) or them being able to read and modify your encrypted messages.
 - In the transport layer, do these messages use TCP or UDP? Why?
+	-These messages use TCP. It is incredibly important for all of the data to be there in the right order. If something is missing, the message with be basically unreadable, plus the extra few milliseconds don't really matter.
 - Now that you've created packets in the transport layer, give a short explanation of what happens to these packets in the internet layer and in the link layer.
+	-After being broken down into packets, the data goes to the router which allows it to be transferred to another router, until it has reached it's destination (the IP address is found by the internet layer, before routing)
 - This protocol successfully encrypts the **content** of the message. Even though and adversary in the middle can't read the content of the message, what other
 information can they still see?
-
+`	-They can still see who the message is from, who the message it too, how many messages have been sent, and how long these messages are.
+  
