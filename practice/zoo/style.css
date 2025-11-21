@@ -1,0 +1,18 @@
+table, tr, th, td{
+	border: 2px dashed black;
+	border-collapse: collapse;
+	}
+body 
+	{background-color: #dbd8e3;
+		color: #2a2438:
+}
+.highlight{
+background-color: white;
+}
+
+.link{
+background-color: white;
+}
+#text{
+color: #5c5470;
+}
