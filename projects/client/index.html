@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Homepage</title>
+<style>
+.hero-section {
+  background-color: #101d3e;/*hero color*/
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /*height of hero*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;/* should be aligned to the center*/
+  color: white;
+  padding: 20px;
+  position: relative; /*text color and position*/
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* add shadow*/
+}
+
+.content h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5em;/*style h1 text*/
+}
+
+.content p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5em;/*style p text*/
+}
+
+.button {
+  background-color: #add46d; /*button color*/
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;/*settings for button*/
+}
+.content p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5em;/*style p text*/
+}
+.card {
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* add shadow*/
+  overflow: hidden; /* makes images fit the box */
+  width: 200px; /* width */
+  margin: 20px;
+}
+.small-card{
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);/* add shadow*/
+  overflow:hidden;
+  width: 250px;
+  margin: 20px;
+}
+.card-content {
+  padding: 15px;
+}
+
+.card h3 {
+  margin-top: 5;
+}
+
+.card-button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #add46d; /*button color*/
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;/*remove the link line*/
+  margin-top: 10px;
+}
+.grid-container {
+  display: grid; /* define layout */
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* 5 equal columns */
+  grid-gap: 7px; /* space between cards */
+}
+.grid-container2 {
+  display: grid; /* define layout */
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 equal columns */
+  grid-gap: 7px; /* space between cards */
+}
+.NOVA-info {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* add shadow*/
+}
+.course-cards{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* add shadow*/
+}
+.student-works{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* add shadow*/
+}
+.footer{
+  background-color: #101d3e; 
+  background-repeat: no-repeat;
+  height: 50vh; /*height of footer*/
+  width: 100vw;
+  margin: 0;
+}
+</style> 
+
+</head>
+<body>
+<section class="hero-section">
+  <div class="content">
+    <h1>CS Classes at Arlington Tech</h1>
+    <p>Take programming courses I-III at Arlington Tech.</p>
+    <a href="https://careercenter.apsva.us/computer-programming" class="button">Explore our classes</a><!--put link here-->
+  </div>
+</section>
+<br>
+<section class="NOVA-info">
+<h2 style="padding: 10px;">What we offer</h2>
+<p style="padding: 10px;">This course provides a comprehensive way to start your computer science journey.
+ Throughout the 3-5 years you will develop a basic understanding of how computers work along with an intro to python and C++.
+ These courses also offer opportunities to recieve cerifications in python and C++.
+ Upon completion of these courses will be elegable to recieve an <a href="https://catalog.nvcc.edu/preview_program.php?catoid=15&poid=3735">Associates in Computer Science.</a>
+See <a href="https://ict.gctaa.net/"> https://ict.gctaa.net/</a> for details about individual courses.</p>
+</section>
+<br>
+<section class="course-cards">
+<h2 style="padding: 10px;">Our recommened path</h2>
+<p style="padding: 10px;">Our computer programming course is a three-year sequence of Dual Enrolled classes, focusing on basic understanding of how computers work.
+<br>
+ Students who complete all three years (as well as additional general education requirements) are eligible to receive an Associates in Computer Science.</p>
+<div class="grid-container">
+<div class="card">
+  <img src="../Placeholder-1.png" alt="Card Image"><!--space to add image-->
+  <div class="card-content">
+    <h3>DE Web Design</h3>
+    <p>Recommened pre-requisite</p>
+    <a href="#" class="card-button">Learn More</a>
+  </div><!--close content-->
+</div><!--close card-->
+<div class="card">
+  <img src="../Placeholder-1.png" alt="Card Image">
+  <div class="card-content">
+    <h3>Programming I</h3>
+    <p>Year #1</p>
+    <a href="#" class="card-button">Learn More</a>
+  </div><!--close content-->
+</div><!--close card-->
+<div class="card">
+  <img src="../Placeholder-1.png" alt="Card Image">
+  <div class="card-content">
+    <h3>Programming II</h3>
+    <p>Year #2</p>
+    <a href="#" class="card-button">Learn More</a>
+  </div><!--close content-->
+</div><!--close card-->
+<div class="card">
+  <img src="../Placeholder-1.png" alt="Card Image">
+  <div class="card-content">
+    <h3>Programming III</h3>
+    <p>Year #3</p>
+    <a href="#" class="card-button">Learn More</a>
+  </div><!--close content-->
+</div><!--close card-->
+<div class="card">
+  <img src="../Placeholder-1.png" alt="Card Image">
+  <div class="card-content">
+    <h3>DE Database Design & Management</h3>
+    <p>Optional extension</p>
+    <a href="#" class="card-button">Learn More</a>
+  </div><!--close content-->
+</div><!--close container-->
+</div><!--close flex-->
+<p style="padding: 10px;"> See <a href="https://apscs.org/index.html?school=acc">apscs.org</a> for information on separate pathaways.</p>
+</section>
+<section class="student-works">
+<h2 style="padding: 10px;">Student Works</h2>
+<p style="padding: 10px;">Below are four example websites created by students in the DE Web Design class.</p>
+<div class="grid-container2">
+<div class="small-card">
+  <div class="card-content">
+    <h3>Website Example #1</h3>
+    <p>Catey Wright</p>
+    <a href="https://catey-wrong.github.io" class="card-button">Go to website</a>
+  </div><!--close card contant-->
+</div><!--close card-->
+<div class="small-card">
+  <div class="card-content">
+    <h3>Website Example #2</h3>
+    <p>Tomio Mataka</p>
+    <a href="https://toemio.github.io" class="card-button">Go to website</a>
+  </div><!--close card content-->
+</div><!--close card-->
+<div class="small-card">
+  <div class="card-content">
+    <h3>Website Example #3</h3>
+    <p>Clara Wahl</p>
+    <a href="https://cwahl28.github.io/" class="card-button">Go to website</a>
+  </div><!--close card content-->
+</div><!--close card-->
+<div class="small-card">
+  <div class="card-content">
+    <h3>Website Example #4</h3>
+    <p>Raphael Golner</p>
+    <a href="https://raphytaphy19.github.io" class="card-button">Go to website</a>
+  </div><!--close card content-->
+</div><!--close card-->
+</div><!--close container-->
+</section>
+<section class="footer">
+</section>
+</body>
+</html>
