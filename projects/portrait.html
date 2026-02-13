@@ -15,7 +15,7 @@
 	const canvas = document.getElementById("canvas");
 	const ctx = canvas.getContext("2d");
 	//hair shape
-	ctx.fillStyle="#895129";
+	ctx.fillStyle="#684028";
 	ctx.beginPath();
 	ctx.fillRect(100, 230, 200, 100);	
 	ctx.fill();
@@ -25,7 +25,7 @@
 	ctx.lineTo(250, 200);
 	ctx.fill();
 
-	ctx.fillStyle="#895129";
+	ctx.fillStyle="#684028";
 	ctx.beginPath();
 	ctx.fillRect(100, 230, 200, 100);	
 	ctx.fill();
@@ -45,7 +45,7 @@
 	ctx.lineTo(150, 200);
 	ctx.fill();
 //hair shadows
-	ctx.fillStyle="#684028";	
+	ctx.fillStyle="#493128";	
 	ctx.beginPath();
 	ctx.moveTo(270, 290);
 	ctx.lineTo(285, 340);
@@ -73,19 +73,19 @@
 	ctx.beginPath();
 	ctx.fillRect(150,257, 100, 85);
 
-	ctx.fillStyle= "#ffe2c9";
+	ctx.fillStyle= "#ffe2d6";
 	ctx.beginPath();
 	ctx.ellipse(200, 200, 100, 115, 0, 0, 2*Math.PI);
 	ctx.fill();
 	//Eyes
 	ctx.fillStyle="white";
 	ctx.beginPath();
-	ctx.ellipse(160, 200, 20, 12, 0, 0, 2*Math.PI);
+	ctx.ellipse(160, 200, 20, 11, 0, 0, 2*Math.PI);
 	ctx.fill();
 
 	ctx.fillStyle="white";
 	ctx.beginPath();
-	ctx.ellipse(240, 200, 20, 12, 0, 0, 2*Math.PI);
+	ctx.ellipse(240, 200, 20, 11, 0, 0, 2*Math.PI);
 	ctx.fill();
 	//irises
 
@@ -100,20 +100,29 @@
 	ctx.fill();
 
 	//Hair pieces front
-	ctx.fillStyle="#895129";
+	ctx.fillStyle="#684028";
 	ctx.beginPath();
-	ctx.moveTo(200, 75);
-	ctx.lineTo(100, 90);
+	ctx.moveTo(200, 85);
+	ctx.lineTo(100, 95);
 	ctx.lineTo(75,250);
 	ctx.lineTo (200,150);
 	ctx.fill();
 
-	ctx.fillStyle="#895129";
+	ctx.fillStyle="#684028";
 	ctx.beginPath();
-	ctx.moveTo(200, 75);
-	ctx.lineTo(300, 90);
+	ctx.moveTo(200, 85);
+	ctx.lineTo(300, 95);
 	ctx.lineTo(320,250);
 	ctx.lineTo (200,150);
+	ctx.fill();
+	//that one piece of hair that is sometimes green
+	ctx.fillStyle="#0b6629";
+	ctx.beginPath();
+	ctx.moveTo(200, 150);
+	ctx.lineTo(200, 125);
+	ctx.lineTo(175, 125);
+	ctx.lineTo(110, 230);
+	ctx.lineTo(110, 240);
 	ctx.fill();
 	
 	//nose
