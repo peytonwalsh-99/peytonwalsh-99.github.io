@@ -1,0 +1,142 @@
+
+<!DOCTYPE.html>
+<html lang="en">
+	<head>
+	<style>
+	canvas{
+	border: black 1px solid;
+	</style>
+		<title>Portrait</title>
+	</head>
+	<body>
+		<canvas id="canvas" width="800" height="800">
+	<script>
+	//MAGIC
+	const canvas = document.getElementById("canvas");
+	const ctx = canvas.getContext("2d");
+	//hair shape
+	ctx.fillStyle="#684028";
+	ctx.beginPath();
+	ctx.fillRect(100, 230, 200, 100);	
+	ctx.fill();
+	ctx.moveTo(300, 250);
+	ctx.lineTo(315, 300);
+	ctx.lineTo(300, 290);
+	ctx.lineTo(250, 200);
+	ctx.fill();
+
+	ctx.fillStyle="#684028";
+	ctx.beginPath();
+	ctx.fillRect(100, 230, 200, 100);	
+	ctx.fill();
+	ctx.moveTo(300, 290);
+	ctx.lineTo(315, 340);
+	ctx.lineTo(300, 330);
+	ctx.lineTo(250, 220);
+	ctx.fill();
+	ctx.moveTo(100, 290);
+	ctx.lineTo(90, 340);
+	ctx.lineTo(115, 330);
+	ctx.lineTo(150, 220);
+	ctx.fill();
+	ctx.moveTo(100, 250);
+	ctx.lineTo(90, 300);
+	ctx.lineTo(115, 290);
+	ctx.lineTo(150, 200);
+	ctx.fill();
+//hair shadows
+	ctx.fillStyle="#493128";	
+	ctx.beginPath();
+	ctx.moveTo(270, 290);
+	ctx.lineTo(285, 340);
+	ctx.lineTo(250, 330);
+	ctx.lineTo(180, 220);
+	ctx.fill();
+	ctx.moveTo(130, 290);
+	ctx.lineTo(120, 340);
+	ctx.lineTo(165, 330);
+	ctx.lineTo(180, 220);
+	ctx.fill();
+	ctx.moveTo(130, 250);
+	ctx.lineTo(120, 300);
+	ctx.lineTo(145, 290);
+	ctx.lineTo(180, 200);
+	ctx.fill();
+	ctx.moveTo(270, 250);
+	ctx.lineTo(285, 300);
+	ctx.lineTo(270, 290);
+	ctx.lineTo(220, 200);
+	ctx.fill();
+
+	//face
+	ctx.fillStyle="#edd2c9";//shadow color
+	ctx.beginPath();
+	ctx.fillRect(150,257, 100, 85);
+
+	ctx.fillStyle= "#ffe2d6";
+	ctx.beginPath();
+	ctx.ellipse(200, 200, 100, 115, 0, 0, 2*Math.PI);
+	ctx.fill();
+	//Eyes
+	ctx.fillStyle="white";
+	ctx.beginPath();
+	ctx.ellipse(160, 200, 20, 11, 0, 0, 2*Math.PI);
+	ctx.fill();
+
+	ctx.fillStyle="white";
+	ctx.beginPath();
+	ctx.ellipse(240, 200, 20, 11, 0, 0, 2*Math.PI);
+	ctx.fill();
+	//irises
+
+	ctx.fillStyle="#532915";
+	ctx.beginPath();
+	ctx.ellipse(240, 200, 10, 10, 0, 0, 2*Math.PI);
+	ctx.fill();
+
+	ctx.fillStyle="#532915";
+	ctx.beginPath();
+	ctx.ellipse(160, 200, 10, 10, 0, 0, 2*Math.PI);
+	ctx.fill();
+
+	//Hair pieces front
+	ctx.fillStyle="#684028";
+	ctx.beginPath();
+	ctx.moveTo(200, 85);
+	ctx.lineTo(100, 95);
+	ctx.lineTo(75,250);
+	ctx.lineTo (200,150);
+	ctx.fill();
+
+	ctx.fillStyle="#684028";
+	ctx.beginPath();
+	ctx.moveTo(200, 85);
+	ctx.lineTo(300, 95);
+	ctx.lineTo(320,250);
+	ctx.lineTo (200,150);
+	ctx.fill();
+	//that one piece of hair that is sometimes green
+	ctx.fillStyle="#0b6629";
+	ctx.beginPath();
+	ctx.moveTo(200, 150);
+	ctx.lineTo(200, 125);
+	ctx.lineTo(175, 125);
+	ctx.lineTo(110, 230);
+	ctx.lineTo(110, 240);
+	ctx.fill();
+	
+	//nose
+	ctx.fillStyle="black";
+	ctx.beginPath();
+	ctx.moveTo(200, 215);
+	ctx.lineTo(190, 250);
+	ctx.lineTo(198, 250);
+	ctx.stroke();
+	//mouth
+	ctx.beginPath();
+	ctx.moveTo(185, 288);
+	ctx.lineTo(200, 285);
+	ctx.stroke();
+	</script> 
+	</body>
+</html>
