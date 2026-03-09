@@ -2,41 +2,43 @@ let gameActive = true; //this variable is required.
                        //to stop the game, set it to false.
 
 //Declare your other global variables here
-
+let foundBowl1=false;
+let foodBowl2=false;
+let bowlFull=false;
 
 //If you need, add any "helper" functions here
 
 
 //Make one function for each location
-function locationA() {
+function livingRoom() {
     clear();
-    print("\nYou are in location A!");
+    print("\nYou are in the living room!");
     print("\nWhere do you want to go next? Say one of these choices:" +
-        "\n\tlocationB");
+        "\n\tEntry Way\n\tDining Room");
     
     function processInput(input){
-        if (input.toLowerCase() === "locationb") {
-            locationB();
+        if (input.toLowerCase() === "Dining Room") {
+            diningRoom();
         } else {
             stayHere();
-            waitThenCall(locationA);
+            waitThenCall(livingRoom);
         }
     }
     waitForInput(processInput);
 }
 
-function locationB() {
+function diningRoom() {
     clear();
-    print("\nYou are in location B!");
+    print("\nYou are in the dining room");
     print("\nWhere do you want to go next? Say one of these choices:" +
-        "\n\tlocationA");
+        "\n\tLiving Room\n\tKitchen");
     
     function processInput(input){
-        if (input.toLowerCase() === "locationa") {
-            locationA();
+        if (input.toLowerCase() === "Living Room") {
+            livingRoom();
         } else {
             stayHere();
-            waitThenCall(locationB);
+            waitThenCall(diningRoom);
         }
     }
     waitForInput(processInput);
@@ -49,7 +51,7 @@ function start(){
     print("Welcome to my game! Press any key to start");
 
     function processInput(input){
-            locationA();
+            livingRoom();
     }
     waitForInput(processInput);
 }
