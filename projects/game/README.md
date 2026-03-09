@@ -15,9 +15,9 @@ The most important variables will be "foundBowl1", "foundBowl2", and "bowlFull",
 
 ```mermaid
 graph TD;
-    Office-->Entryway;
-    Office-->Living Room;
-    Entryway-->Living Room;
-    Living Room-->Dining Room;
-    Dinning Room-->Kitchen;
+    A-->B;
+    A-->C;
+    B-->C;
+    C-->D;
+    D-->E;
 ```  
